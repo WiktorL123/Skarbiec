@@ -1,0 +1,239 @@
+web application/stitch/projects/11150679848990178381/screens/8935ef2994f8448ca4b309ef5da48f12
+# Skarbiec iOS — UI/UX Specification & AI Implementation Guide: Apple Liquid Glass
+
+> **Przeznaczenie dokumentu:** Ten brief techniczno-wizualny został zoptymalizowany dla inżynierów oraz modeli AI (LLM / Copilot / Claude / GPT), aby bezbłędnie zreplikować estetykę **Apple Liquid Glass** w kodzie frontendowym (**React Native + Expo** lub **HTML/CSS/Tailwind**).
+
+---
+
+## 1. Architektura Wizualna & Zasady Apple Liquid Glass
+
+Estetyka Liquid Glass nie jest zwykłym płaskim glassmorphismem. Opiera się na trójwymiarowej iluzji grubości szkła optycznego, załamaniu światła (refrakcji) oraz dynamicznym podświetleniu krawędzi (specular highlights).
+
+### 1.1 Kluczowe reguły warstw (Layering & Z-Index)
+1. **Warstwa 0: Deep Void (Tło bazowe)** — Jednolita, ciemna głębia (`#060E20` do `#0B1326`), zapobiegająca zmęczeniu wzroku.
+2. **Warstwa 1: Fluid Mesh / Chromatic Orbs** — Pływające, miękkie plamy barwne (szmaragd, indygo, błękit kobaltowy) z rozmyciem `filter: blur(80px-120px)`. Nadają szklanym kartom tło do refrakcji.
+3. **Warstwa 2: Liquid Glass Canvas** — Półprzezroczyste karty i pigułki z rozmyciem tła (`blur(24px) saturate(180%)`).
+4. **Warstwa 3: Specular Edge & Bevel** — Wewnętrzne mikroskopijne refleksy światła symulujące załamanie krawędzi szkła.
+5. **Warstwa 4: Crisp Content & Luminescence** — Kontrastowa typografia (SF Pro / Manrope), fluorescencyjne akcenty i ikony SF Symbols / Lucide.
+
+---
+
+## 2. Tokeny Kolorystyczne & Przełożenie na Kod
+
+### 2.1 Paleta Kolorów (Hex & RGBA)
+```json
+{
+  "background": {
+    "void": "#060E20",
+    "surface": "#0B1326",
+    "surfaceContainer": "rgba(19, 27, 46, 0.65)",
+    "surfaceGlass": "rgba(255, 255, 255, 0.04)",
+    "surfaceGlassHover": "rgba(255, 255, 255, 0.08)"
+  },
+  "glassBorders": {
+    "subtle": "rgba(255, 255, 255, 0.08)",
+    "crisp": "rgba(255, 255, 255, 0.14)",
+    "highlightTop": "rgba(255, 255, 255, 0.25)"
+  },
+  "semanticAccents": {
+    "emerald": {
+      "primary": "#10B981",
+      "glow": "rgba(16, 185, 129, 0.35)",
+      "glass": "rgba(16, 185, 129, 0.12)"
+    },
+    "cobalt": {
+      "primary": "#3B82F6",
+      "glow": "rgba(59, 130, 246, 0.35)",
+      "glass": "rgba(59, 130, 246, 0.12)"
+    },
+    "violet": {
+      "primary": "#8B5CF6",
+      "glow": "rgba(139, 92, 246, 0.35)",
+      "glass": "rgba(139, 92, 246, 0.12)"
+    },
+    "amber": {
+      "primary": "#F59E0B",
+      "glow": "rgba(245, 158, 11, 0.35)",
+      "glass": "rgba(245, 158, 11, 0.12)"
+    },
+    "coral": {
+      "primary": "#EF4444",
+      "glow": "rgba(239, 68, 68, 0.35)",
+      "glass": "rgba(239, 68, 68, 0.12)"
+    }
+  },
+  "text": {
+    "primary": "#F8FAFC",
+    "secondary": "#94A3B8",
+    "tertiary": "#64748B",
+    "inverse": "#020617"
+  }
+}
+```
+
+---
+
+## 3. Snippety Implementacyjne: Gotowe do Kodu
+
+### 3.1 CSS / Tailwind Utility Presets
+
+```css
+/* Klasa głównej karty Liquid Glass */
+.apple-liquid-glass {
+  background: rgba(18, 26, 44, 0.55);
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.22); /* Specular top highlight */
+  box-shadow: 
+    0 16px 36px -8px rgba(0, 0, 0, 0.45),
+    inset 0 1px 1px rgba(255, 255, 255, 0.20),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 24px;
+}
+
+/* Wypukła pigułka szklana (Capsule / Pill Badge / Filter) */
+.glass-pill {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 9999px;
+  box-shadow: inset 0 1px 0.5px rgba(255, 255, 255, 0.25);
+}
+
+/* Płynny blask akcentowy (np. FAB lub podświetlenie szmaragdowe) */
+.glass-glow-emerald {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.9) 0%, rgba(5, 150, 105, 0.8) 100%);
+  box-shadow: 
+    0 8px 24px -4px rgba(16, 185, 129, 0.45),
+    inset 0 1.5px 1px rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+```
+
+### 3.2 React Native (Expo) z `expo-blur` & `react-native-linear-gradient`
+
+```tsx
+import React from 'react';
+import { StyleSheet, View, ViewProps } from 'react-native';
+import { BlurView } from 'expo-blur';
+import { LinearGradient } from 'expo-linear-gradient';
+
+interface LiquidGlassCardProps extends ViewProps {
+  children: React.ReactNode;
+  tintColor?: string;
+}
+
+export const LiquidGlassCard: React.FC<LiquidGlassCardProps> = ({ children, style }) => {
+  return (
+    <View style={[styles.container, style]}>
+      {/* 1. Rozmycie podłoża */}
+      <BlurView intensity={50} tint="dark" style={StyleSheet.absoluteFill}>
+        {/* 2. Półprzezroczysty gradient szklany */}
+        <LinearGradient
+          colors={['rgba(255, 255, 255, 0.08)', 'rgba(15, 23, 42, 0.6)']}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 0, y: 1 }}
+          style={StyleSheet.absoluteFill}
+        />
+      </BlurView>
+
+      {/* 3. Precyzyjna krawędź z odblaskiem u góry */}
+      <View style={styles.borderOverlay} pointerEvents="none" />
+
+      {/* 4. Zawartość */}
+      <View style={styles.content}>{children}</View>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    borderRadius: 24,
+    overflow: 'hidden',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 12 },
+    shadowOpacity: 0.35,
+    shadowRadius: 18,
+    elevation: 8,
+  },
+  borderOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    borderRadius: 24,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.12)',
+    borderTopColor: 'rgba(255, 255, 255, 0.28)', // Załamanie światła u góry
+  },
+  content: {
+    padding: 20,
+  },
+});
+```
+
+---
+
+## 4. Specyfikacja Komponentów UI (Blueprint dla AI)
+
+### Komponent 1: **Hero Card (Miękkie Oszczędności / Total Wealth)**
+* **Geometria:** Zaokrąglenie `rounded-3xl` (28px). Marginesy boczne `px-4`.
+* **Tło wewnętrzne:** Gradient skośny `linear-gradient(135deg, rgba(16,185,129,0.08) 0%, rgba(6,14,32,0.4) 100%)`.
+* **Typografia Liczb:** Krój `Manrope` / `SF Pro Display`, waga `700` lub `800`, `font-feature-settings: 'tnum'` (tabular figures, stała szerokość cyfr). Rozmiar: `32px` do `38px`.
+* **Pasek postępu (Liquid Bar):**
+  - Tor (Track): Wysokość `8px`, tło `rgba(255, 255, 255, 0.06)`, `rounded-full`.
+  - Wypełnienie: Gradient `linear-gradient(90deg, #10B981, #34D399)`, z delikatnym cieniem `box-shadow: 0 0 12px rgba(16, 185, 129, 0.5)`.
+* **Sub-kapsuły:** Wewnątrz karty małe boksy szklane na kwotę nienaruszalną (poduszka 5 000 zł) i wolną (3 600 zł) z ikoną kłódki lub tarczy.
+
+### Komponent 2: **Płynąca Belka Nawigacyjna (Glass Bottom Tab Bar)**
+* **Pozycja:** `fixed bottom-0 left-0 right-0`, podwieszona na wysokości `calc(env(safe-area-inset-bottom) + 64px)`.
+* **Styl:**
+  - `backdrop-filter: blur(32px) saturate(200%)`.
+  - Tło: `rgba(6, 14, 32, 0.75)`.
+  - Krawędź górna: `1px solid rgba(255, 255, 255, 0.14)`.
+* **Stany Ikon:**
+  - *Nieaktywna:* Kolor `#64748B`, ikona konturowa.
+  - *Aktywna:* Kolor akcentu (np. `#10B981`), ikona wypełniona + subtelna luminescencyjna poświata `drop-shadow(0 0 6px rgba(16,185,129,0.5))`.
+* **Przycisk Dodawania (+ FAB):**
+  - Wycięty lub unoszący się centralnie/z prawej strony.
+  - Szmaragdowy gradient z refleksem światła i pulsującym cieniem.
+
+### Komponent 3: **Row / Lista Transakcji i Subskrypcji**
+* **Struktura kontenera:** Karta zbiorcza grupuje wiersze oddzielone linią `rgba(255, 255, 255, 0.06)`.
+* **Plakietka Ikony (Icon Avatar):**
+  - Rozmiar: `44x44px`, zaokrąglenie `14px` (`rounded-2xl`).
+  - Tło zależne od kategorii:
+    - *Bonds:* Kobalt szklany (`rgba(59, 130, 246, 0.15)` z ikoną `#60A5FA`).
+    - *ETF:* Fiolet szklany (`rgba(139, 92, 246, 0.15)` z ikoną `#A78BFA`).
+    - *Subskrypcje:* Bursztyn szklany (`rgba(245, 158, 11, 0.15)` z ikoną `#FBBF24`).
+* **Wizualna separacja natury transakcji (Kluczowa zasada):**
+  - Kwoty konsumpcyjne: kolor `#EF4444` z prefiksem `-`.
+  - Kwoty transferów majątkowych (oszczędności): kolor `#94A3B8` lub `#10B981` z ikoną transferu `→`, nigdy z ujemnym znakiem sugerującym stratę.
+
+### Komponent 4: **Segmented Control / Przełącznik Scenariuszy**
+* **Tło bazy:** Pigułka `rgba(11, 19, 38, 0.8)` z `padding: 4px`.
+* **Aktywna kapsuła (Indicator):**
+  - Tło: `rgba(255, 255, 255, 0.12)`.
+  - Płynne przejście `transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1)`.
+  - Obrys: `1px solid rgba(255, 255, 255, 0.2)`.
+
+---
+
+## 5. Gotowy Prompt do Kopiowania dla Generatywnego AI (System / Developer Prompt)
+
+Wklej poniższy blok jako wytyczne dla dowolnego modelu AI generującego komponenty:
+
+```markdown
+You are an expert iOS Frontend Engineer specializing in Apple Human Interface Guidelines and the modern Apple Liquid Glass design language.
+
+When generating UI components or screens for this project, strictly follow these design constraints:
+1. THEME & BASE: Always use ultra-dark backgrounds (#060E20 to #0B1326). Behind glass elements, place diffuse radial/ambient gradient light orbs (colors: #10B981, #3B82F6, #8B5CF6 with blur >= 80px) to ensure glass cards refract ambient illumination.
+2. GLASS FINISH: Every card, modal, and floating bar must use:
+   - backdrop-filter: blur(24px) saturate(180%)
+   - background: rgba(18, 26, 44, 0.6) or rgba(255, 255, 255, 0.04)
+   - border: 1px solid rgba(255, 255, 255, 0.12)
+   - specular highlight: border-top: 1px solid rgba(255, 255, 255, 0.25)
+   - inner shadow: inset 0 1px 1px rgba(255, 255, 255, 0.20)
+3. CORNER RADII: Consistent iOS curvature — Outer cards: 24px (rounded-3xl), nested elements/avatars: 14px (rounded-2xl), badges/buttons: 9999px (rounded-full).
+4. TYPOGRAPHY: System sans-serif (SF Pro Display / Manrope). Crucial: Currency and financial numbers must use tabular figures (font-variant-numeric: tabular-nums).
+5. FINANCIAL PSYCHOLOGY: Money sent to savings or investments must NEVER look like an expense or consumption loss. Highlight wealth accumulation in emerald (#10B981) or cobalt (#3B82F6).
+```
