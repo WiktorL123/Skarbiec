@@ -49,3 +49,12 @@ Dashboard; Oszczędności; Plan miesiąca; Cele; Historia; stałe wydatki; ręcz
 - `README.md` opisuje produkt dla ludzi, nie jest instrukcją uruchamiania agentów. Przeniesiona instrukcja używania pakietu znajduje się w `docs/00-agent-kit-guide.md`.
 - Przed projektowaniem lub implementacją GitHub Actions / buildów iOS przeczytaj `docs/13-ci-cd-plan.md` oraz `skills/ci-cd-planning/SKILL.md`. Są to **propozycje**, nie zatwierdzona konfiguracja. Najpierw wymagany Interactive Planning Gate; nie generuj workflow YAML bez zgody użytkownika i osobnego taska.
 - Nie uruchamiaj CI/CD bez powiązania z działającymi skryptami i faktycznym środowiskiem z A01.1/A01.2. Podpisywanie iOS i zarządzanie sekretami wymagają osobnej akceptacji.
+
+## GitHub Issues — synchronizacja backlogu
+- Przed tworzeniem, aktualizowaniem lub zamykaniem GitHub Issues przeczytaj `docs/14-github-workflow.md` i `skills/github-issue-sync/SKILL.md`.
+- Lokalny `docs/backlog/` jest źródłem prawdy dla zakresu, zależności i kryteriów akceptacji. GitHub Issues służą do śledzenia statusu, dyskusji oraz powiązań z PR. Nie twórz dwóch niezależnych wersji specyfikacji.
+- Mapowanie: GitHub Milestone = Milestone A–E; parent issue = Epic; sub-issue = pojedynczy task. Nie twórz GitHub Projects bez osobnego polecenia.
+- Każda masowa synchronizacja: weryfikacja repo i uprawnień → inwentaryzacja wszystkich issues (także zamkniętych) → ankieta / uzgodnienie → **dry-run bez zapisów** → wyraźna akceptacja → operacje zapisu → raport.
+- Operacje GitHub są zewnętrznymi zmianami. Nigdy nie rozpoczynaj `create`, `edit`, `close`, `label`, `milestone` ani tworzenia relacji na GitHubie wyłącznie na podstawie ogólnej prośby o analizę. Po akceptacji wykonaj tylko zatwierdzony plan.
+- Używaj stabilnych identyfikatorów `A01.1`, `B02.3` itp. jako kluczy mapowania i sprawdzaj duplikaty; ponowne uruchomienie synchronizacji musi być idempotentne. Nie zamykaj issue bez zgody użytkownika po Review.
+- Nie umieszczaj w Issues rzeczywistych, prywatnych sald, danych bankowych, kluczy ani tajemnic. Jeśli repozytorium jest publiczne, pokaż sanitizowany podgląd treści i uzyskaj zgodę.
