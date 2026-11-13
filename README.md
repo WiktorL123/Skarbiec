@@ -1,36 +1,69 @@
-# Skarbiec — AI development kit
+# Skarbiec 🏦
 
-Zestaw repozytoryjnych instrukcji dla agentów budujących aplikację oszczędnościową **Skarbiec** (nazwa z briefu Stitch, robocza; oryginalna nazwa projektu: Savings App).
+**Skarbiec** to prywatna aplikacja mobilna na iOS do świadomego planowania oszczędności, kontrolowania wydatków i realizacji celów finansowych. Powstaje w podejściu **agentic programming**: rozwój jest podzielony na niewielkie zadania, implementowane z pomocą agentów AI, testowane i zatwierdzane przez autora projektu.
 
-## Jak używać
-1. Skopiuj zawartość paczki do głównego katalogu repozytorium.
-2. Otwórz repozytorium w IDE i poleć agentowi przeczytać `AGENTS.md` i `PROGRESS.md`.
-3. Do zadań domenowych użyj `skills/domain-guardian/SKILL.md`, do UI `skills/ios-ui/SKILL.md`, do implementacji `skills/feature-builder/SKILL.md`, do review `skills/qa-reviewer/SKILL.md`.
-4. Zacznij od `docs/09-backlog.md`, wybierz **jedno** zadanie z `docs/backlog/` i przekazuj agentowi tylko jego ID. Każdy task kończy się `Review`; tylko Ty zatwierdzasz `Done`. Agent proponuje retrospektywę, a `PROGRESS.md` zmienia wyłącznie po Twojej akceptacji.
+> **Status:** projekt w przygotowaniu, przed implementacją MVP. To repozytorium zawiera na razie specyfikację produktu, reguły domenowe, założenia UI oraz backlog. Opisane poniżej funkcjonalności są **planowane**, a nie gotowe.
 
-## Układ
-- `AGENTS.md`: reguły całego repo i przekazywanie pracy agentom.
-- `PROGRESS.md`: zatwierdzony, zwięzły dziennik retrospektyw i ciągłość kontekstu między sesjami.
-- `docs/01-product.md`: wizja, zakres MVP, język, nawigacja, user flows.
-- `docs/02-domain.md`: znaczenie pieniędzy, operacji i sald.
-- `docs/03-data-fixtures.md`: sprawdzone dane, planowane operacje i sample UI.
-- `docs/04-design-system.md`: synteza Google Stitch + zasady natywnego RN.
-- `docs/05-screens.md`: kontrakty ekranów i stanów.
-- `docs/06-architecture.md`: architektura i decyzje techniczne MVP.
-- `docs/07-acceptance-tests.md`: scenariusze i kryteria akceptacji.
-- `docs/08-decisions.md`: ADR-y, niewiadome i pomysły na później.
-- `docs/09-backlog.md`: indeks Milestone’ów i Epiców.
-- `docs/backlog/`: szczegółowe taski, zależności, zakres i kryteria akceptacji.
-- `docs/10-agent-workflow.md`: współpraca agentów i format handoff.
-- `docs/11-data-model.md`: proponowany model danych, zdarzenia, SQLite.
-- `docs/12-privacy.md`: minimalizacja danych i eksport offline.
-- `reference/stitch-original.txt`: oryginalny, niezmieniony brief użytkownika.
+## Po co Skarbiec?
 
-Ważne: to **dokumentacja do implementacji**, nie gotowy kod aplikacji. Propozycje techniczne można zmieniać przez ADR, nie przez cichą zmianę domeny.
+Typowe zestawienia bankowe potrafią zaliczać przelewy na własne oszczędności do „wydatków”. Skarbiec rozdziela **konsumpcję** od **przenoszenia własnego kapitału**, tak aby łatwo było odpowiedzieć na pytania: ile rzeczywiście wydałem, ile odłożyłem i czy mogę sobie pozwolić na kolejny zakup?
 
-## Start: interaktywny bootstrap i testy (v2.2)
-1. `A01.1` — agent najpierw pyta o wybory techniczne; po Twojej akceptacji tworzy Expo/TypeScript, tokeny Stitch i **tylko jeden ekran Hello World w karcie Liquid Glass**.
-2. Po Review i akceptacji `A01.1`, `A01.2` — osobna ankieta dot. Jest/jest-expo, React Native Testing Library i ewentualnego E2E; dopiero potem konfiguracja testów.
-3. Dopiero `A01.3` — nawigacja pięciu zakładek.
+## Główne założenia
 
-Claude Code: `CLAUDE.md` wskazuje na `AGENTS.md`. Uzgodnienia techniczne: `docs/12-implementation-decisions.md`. Skill rozmów: `skills/interactive-planning/SKILL.md`.
+- **Miękkie oszczędności:** elastyczne środki na podróże, elektronikę, prezenty i nieprzewidziane sytuacje.
+- **Twarde oszczędności:** długoterminowy kapitał, z odrębną ewidencją obligacji, inwestycji ETF/akcji i PPK.
+- **Rzeczywiste wydatki:** przelew na własny rachunek oszczędnościowy, zasilenie rachunku obligacyjnego lub XTB nie stają się automatycznie wydatkiem konsumpcyjnym.
+- **Plany miesięczne:** zaplanowane i wykonane wpłaty, wpływy, budżet i podsumowanie miesiąca.
+- **Stałe wydatki:** subskrypcje i cykliczne opłaty, z terminami oraz rozróżnieniem kosztu planowanego i faktycznie opłaconego.
+- **Cele finansowe:** od mniejszych zakupów po wkład własny do mieszkania.
+- **Scenariusze:** prognozy zależne m.in. od wysokości przyszłych wpłat i potencjalnych podwyżek wynagrodzenia.
+
+## MVP i technologia
+
+Pierwsza wersja ma działać **offline-first**, bez logowania i bez obowiązkowego połączenia z bankiem. Dane będą wprowadzane i przechowywane lokalnie.
+
+| Obszar | Założenie |
+| --- | --- |
+| Platforma | iOS, aplikacja iPhone |
+| Framework | React Native + Expo |
+| Język | TypeScript |
+| Dane | SQLite na urządzeniu |
+| UI | Ciemny motyw inspirowany koncepcją Liquid Glass, na podstawie projektu Google Stitch |
+| Integracja bankowa | Poza MVP, ewentualna późniejsza integracja AIS |
+| Dystrybucja | Prywatny build na urządzenie, bez planowanej publikacji w App Store |
+
+Szczegóły bibliotek i struktury projektu zostaną zatwierdzone w ramach interaktywnego etapu inicjalizacji.
+
+## Sposób realizacji
+
+Projekt wykorzystuje **agentic programming**, ale decyzje o zakresie, architekturze i akceptacji zmian pozostają po stronie autora. Zadania są dzielone na małe, weryfikowalne części. Każde kończy się przeglądem implementacji i testów. Po zatwierdzeniu mogą zostać zapisane wnioski w dzienniku postępu.
+
+Na początek powstanie szkielet aplikacji z ekranem **Hello World w jednej karcie Liquid Glass**, a następnie infrastruktura testów. Pełne ekrany i funkcje finansowe będą wdrażane w następnych krokach.
+
+## Dokumentacja projektu
+
+- [Wizja produktu](docs/01-product.md)
+- [Model domenowy](docs/02-domain.md)
+- [Design system](docs/04-design-system.md)
+- [Architektura](docs/06-architecture.md)
+- [Backlog](docs/09-backlog.md)
+- [Plan CI/CD i artefaktów](docs/13-ci-cd-plan.md)
+
+Instrukcje dla agentów i organizacja pakietu znajdują się w [przewodniku dla agentów](docs/00-agent-kit-guide.md) oraz w [`AGENTS.md`](AGENTS.md). Zapis postępu projektu: [`PROGRESS.md`](PROGRESS.md).
+
+## Bezpieczeństwo i prywatność
+
+Pierwsza wersja nie zakłada wysyłania historii finansowej na zewnętrzny serwer. Dane i kopie zapasowe wymagają świadomej ochrony; do repozytorium nie należy dodawać rzeczywistych wyciągów bankowych, prywatnych baz SQLite ani kluczy dostępowych. Przykłady w dokumentacji nie oznaczają dostępu do banku.
+
+## Status wdrożenia
+
+- [x] Specyfikacja domenowa i kierunek wizualny
+- [x] Podział prac na epiki i małe zadania
+- [ ] Inicjalizacja aplikacji i ekran Hello World
+- [ ] Infrastruktura testów
+- [ ] Funkcjonalności MVP
+- [ ] Prywatny build iOS
+
+---
+
+*Projekt osobisty, rozwijany iteracyjnie.*

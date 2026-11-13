@@ -44,3 +44,8 @@ Buduj prywatną aplikację iOS do śledzenia miękkich i twardych oszczędności
 
 ## Zakres MVP
 Dashboard; Oszczędności; Plan miesiąca; Cele; Historia; stałe wydatki; ręczna ewidencja; scenariusz z podwyżką; ręczne salda i wyceny; lokalny eksport danych. Kolejność w backlogu; bez sprintów, jeden mały task naraz.
+
+## Dokumentacja agentów i CI/CD
+- `README.md` opisuje produkt dla ludzi, nie jest instrukcją uruchamiania agentów. Przeniesiona instrukcja używania pakietu znajduje się w `docs/00-agent-kit-guide.md`.
+- Przed projektowaniem lub implementacją GitHub Actions / buildów iOS przeczytaj `docs/13-ci-cd-plan.md` oraz `skills/ci-cd-planning/SKILL.md`. Są to **propozycje**, nie zatwierdzona konfiguracja. Najpierw wymagany Interactive Planning Gate; nie generuj workflow YAML bez zgody użytkownika i osobnego taska.
+- Nie uruchamiaj CI/CD bez powiązania z działającymi skryptami i faktycznym środowiskiem z A01.1/A01.2. Podpisywanie iOS i zarządzanie sekretami wymagają osobnej akceptacji.
