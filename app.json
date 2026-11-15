@@ -16,7 +16,8 @@
       "typedRoutes": true
     },
     "ios": {
-      "supportsTablet": false
+      "supportsTablet": false,
+      "bundleIdentifier": "com.skarbiec.app"
     }
   }
 }
