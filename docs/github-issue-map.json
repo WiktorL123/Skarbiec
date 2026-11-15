@@ -1,0 +1,811 @@
+{
+  "schemaVersion": 1,
+  "repository": "WiktorL123/Skarbiec",
+  "sourceBranch": "main",
+  "sourceCommit": "3801c0b0d3c2b9b1d582bd96960b45cc89d05a5c",
+  "createdAt": "2026-11-13T19:21:49.5256158Z",
+  "milestones": {
+    "A": {
+      "url": "https://github.com/WiktorL123/Skarbiec/milestone/1",
+      "number": 1,
+      "title": "A — Fundament"
+    },
+    "B": {
+      "url": "https://github.com/WiktorL123/Skarbiec/milestone/2",
+      "number": 2,
+      "title": "B — Ewidencja i pulpit"
+    },
+    "C": {
+      "url": "https://github.com/WiktorL123/Skarbiec/milestone/3",
+      "number": 3,
+      "title": "C — Miesięczny plan"
+    },
+    "D": {
+      "url": "https://github.com/WiktorL123/Skarbiec/milestone/4",
+      "number": 4,
+      "title": "D — Cele i scenariusze"
+    },
+    "E": {
+      "url": "https://github.com/WiktorL123/Skarbiec/milestone/5",
+      "number": 5,
+      "title": "E — Użytkowanie"
+    }
+  },
+  "issues": {
+    "A01": {
+      "number": 1,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/1",
+      "source": "docs/backlog/milestone-a-foundation/epic-a01/EPIC.md",
+      "sourceSha256": "f6a747195ec1af7980ce824b33b5cba8ee94fe9587f5dd8ea3d265f89d331c22",
+      "kind": "epic",
+      "milestone": "A",
+      "parent": null,
+      "dependencies": []
+    },
+    "A02": {
+      "number": 2,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/2",
+      "source": "docs/backlog/milestone-a-foundation/epic-a02/EPIC.md",
+      "sourceSha256": "2078685781144d6de414681ca71a59e56c246cc124f6868a5acda519a397f830",
+      "kind": "epic",
+      "milestone": "A",
+      "parent": null,
+      "dependencies": []
+    },
+    "A03": {
+      "number": 3,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/3",
+      "source": "docs/backlog/milestone-a-foundation/epic-a03/EPIC.md",
+      "sourceSha256": "5136fe2b507bb7960ec67c9987d4aa43d31ae853fc64c76c8d2985ec5045243d",
+      "kind": "epic",
+      "milestone": "A",
+      "parent": null,
+      "dependencies": []
+    },
+    "B01": {
+      "number": 4,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/4",
+      "source": "docs/backlog/milestone-b-finances/epic-b01/EPIC.md",
+      "sourceSha256": "eed57b349cc713b4d5f671caec17ef7b749aed3f1c9e0f34f9ce116655429f47",
+      "kind": "epic",
+      "milestone": "B",
+      "parent": null,
+      "dependencies": []
+    },
+    "B02": {
+      "number": 5,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/5",
+      "source": "docs/backlog/milestone-b-finances/epic-b02/EPIC.md",
+      "sourceSha256": "3121406fa87acf30237162a30b96f8ed502a4d10d17d8e76b61808d8eed286f9",
+      "kind": "epic",
+      "milestone": "B",
+      "parent": null,
+      "dependencies": []
+    },
+    "B03": {
+      "number": 6,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/6",
+      "source": "docs/backlog/milestone-b-finances/epic-b03/EPIC.md",
+      "sourceSha256": "fced0bee0f224f4e6a27115bee0d35bb96488a32169433be289d0511d8494838",
+      "kind": "epic",
+      "milestone": "B",
+      "parent": null,
+      "dependencies": []
+    },
+    "C01": {
+      "number": 7,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/7",
+      "source": "docs/backlog/milestone-c-planning/epic-c01/EPIC.md",
+      "sourceSha256": "d4a00a601dbc00ebebb108227b0765c989af2455644eb856929fe7767dbae1ed",
+      "kind": "epic",
+      "milestone": "C",
+      "parent": null,
+      "dependencies": []
+    },
+    "C02": {
+      "number": 8,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/8",
+      "source": "docs/backlog/milestone-c-planning/epic-c02/EPIC.md",
+      "sourceSha256": "aba704e9dc866f6073c6d10325ab0d3d3335527e6885172326655ab53703f13a",
+      "kind": "epic",
+      "milestone": "C",
+      "parent": null,
+      "dependencies": []
+    },
+    "C03": {
+      "number": 9,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/9",
+      "source": "docs/backlog/milestone-c-planning/epic-c03/EPIC.md",
+      "sourceSha256": "03f67a342466d5ccdcee66ac794d33c83072741cc2925f4a50b35583ab80f967",
+      "kind": "epic",
+      "milestone": "C",
+      "parent": null,
+      "dependencies": []
+    },
+    "D01": {
+      "number": 10,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/10",
+      "source": "docs/backlog/milestone-d-goals/epic-d01/EPIC.md",
+      "sourceSha256": "12d6fa0207c32877882ea4f4995c4c21cefb2c6acc9e22dec42afb814e3d186d",
+      "kind": "epic",
+      "milestone": "D",
+      "parent": null,
+      "dependencies": []
+    },
+    "D02": {
+      "number": 11,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/11",
+      "source": "docs/backlog/milestone-d-goals/epic-d02/EPIC.md",
+      "sourceSha256": "e987e392314cc72cf9cf1a30c97c91e220295360e872a9050ca2a1730f32c14c",
+      "kind": "epic",
+      "milestone": "D",
+      "parent": null,
+      "dependencies": []
+    },
+    "D03": {
+      "number": 12,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/12",
+      "source": "docs/backlog/milestone-d-goals/epic-d03/EPIC.md",
+      "sourceSha256": "71523ce03a5dd1e549fb1fc316ca1f6b62cde36fe6e4868048c7c651b109092c",
+      "kind": "epic",
+      "milestone": "D",
+      "parent": null,
+      "dependencies": []
+    },
+    "E01": {
+      "number": 13,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/13",
+      "source": "docs/backlog/milestone-e-release/epic-e01/EPIC.md",
+      "sourceSha256": "78181b4d2d987e7f962822eaf657cf3aa6ad2b567f8cebe713b78f84a88a371e",
+      "kind": "epic",
+      "milestone": "E",
+      "parent": null,
+      "dependencies": []
+    },
+    "E02": {
+      "number": 14,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/14",
+      "source": "docs/backlog/milestone-e-release/epic-e02/EPIC.md",
+      "sourceSha256": "4568da5dc7f54db9a9231f91baa477db2cc3634ce7c6092f6d208be2ebeeef98",
+      "kind": "epic",
+      "milestone": "E",
+      "parent": null,
+      "dependencies": []
+    },
+    "E03": {
+      "number": 15,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/15",
+      "source": "docs/backlog/milestone-e-release/epic-e03/EPIC.md",
+      "sourceSha256": "c137a5cd33d4a142717178d3d95b12e218fa67b27a12d44208c60daec68bf312",
+      "kind": "epic",
+      "milestone": "E",
+      "parent": null,
+      "dependencies": []
+    },
+    "A01.1": {
+      "number": 16,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/16",
+      "source": "docs/backlog/milestone-a-foundation/epic-a01/A01.1-bootstrap-expo-liquid-glass.md",
+      "sourceSha256": "672b40787742ebc48e00270d7b689a9329703333f44941ba36cc159fb0a8f918",
+      "kind": "task",
+      "milestone": "A",
+      "parent": "A01",
+      "dependencies": []
+    },
+    "A01.2": {
+      "number": 17,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/17",
+      "source": "docs/backlog/milestone-a-foundation/epic-a01/A01.2-test-infrastructure-bootstrap.md",
+      "sourceSha256": "15634413a8bc69a84c62aa543fb2a5df537705e4ab3439ac65434ecfaa62f0f1",
+      "kind": "task",
+      "milestone": "A",
+      "parent": "A01",
+      "dependencies": [
+        "A01.1"
+      ]
+    },
+    "A03.1": {
+      "number": 18,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/18",
+      "source": "docs/backlog/milestone-a-foundation/epic-a03/A03.1-glasscard-i-fallback.md",
+      "sourceSha256": "29e6bdad231fa05924cacd80c57a6042c31026c7ced7cb7ef0ceaff934610085",
+      "kind": "task",
+      "milestone": "A",
+      "parent": "A03",
+      "dependencies": [
+        "A01.1"
+      ]
+    },
+    "A01.3": {
+      "number": 19,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/19",
+      "source": "docs/backlog/milestone-a-foundation/epic-a01/A01.3-nawigacja-pieciu-zakladek.md",
+      "sourceSha256": "21f1e617e18254e7ac67c5998a9baa70d729a590fa6a3a835d9b5b8a074ec262",
+      "kind": "task",
+      "milestone": "A",
+      "parent": "A01",
+      "dependencies": [
+        "A01.1",
+        "A01.2"
+      ]
+    },
+    "A02.1": {
+      "number": 20,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/20",
+      "source": "docs/backlog/milestone-a-foundation/epic-a02/A02.1-money-i-operacje--kontrakty-domenowe.md",
+      "sourceSha256": "3beaf37bd2b27e1afdb67288907d7cea8223bc32afbcbadf262314c50b8f6364",
+      "kind": "task",
+      "milestone": "A",
+      "parent": "A02",
+      "dependencies": [
+        "A01.2"
+      ]
+    },
+    "A02.2": {
+      "number": 21,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/21",
+      "source": "docs/backlog/milestone-a-foundation/epic-a02/A02.2-sqlite-i-migracja-początkowa.md",
+      "sourceSha256": "5cb8337f5c222e21d49b64c02c8122856f023da330e5737e0b87a64c9b0497d1",
+      "kind": "task",
+      "milestone": "A",
+      "parent": "A02",
+      "dependencies": [
+        "A02.1"
+      ]
+    },
+    "A03.2": {
+      "number": 22,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/22",
+      "source": "docs/backlog/milestone-a-foundation/epic-a03/A03.2-tekst-finansowy-i-format-kwot.md",
+      "sourceSha256": "9ac3772a5cb186ee2b1701211751a098157f57954817086a059105416e813bf3",
+      "kind": "task",
+      "milestone": "A",
+      "parent": "A03",
+      "dependencies": [
+        "A02.1",
+        "A01.1"
+      ]
+    },
+    "A02.3": {
+      "number": 23,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/23",
+      "source": "docs/backlog/milestone-a-foundation/epic-a02/A02.3-repozytorium-operacji.md",
+      "sourceSha256": "e3662edd5e70d8b8ec2f9a242bd44bcafa0b49932f8890db2a39fb9ebdf5b5b7",
+      "kind": "task",
+      "milestone": "A",
+      "parent": "A02",
+      "dependencies": [
+        "A02.2"
+      ]
+    },
+    "A02.4": {
+      "number": 24,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/24",
+      "source": "docs/backlog/milestone-a-foundation/epic-a02/A02.4-snapshoty-sald-i-rekonsyliacja.md",
+      "sourceSha256": "bca3562545cfd0f006926de521f0f563aee4b34c881322472c2e1a764b110995",
+      "kind": "task",
+      "milestone": "A",
+      "parent": "A02",
+      "dependencies": [
+        "A02.2"
+      ]
+    },
+    "A03.3": {
+      "number": 25,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/25",
+      "source": "docs/backlog/milestone-a-foundation/epic-a03/A03.3-row-i-kontrolki-formularza.md",
+      "sourceSha256": "2c772a0279f5616b09268e3e05be5bca6d0c8880ae7336d48adf8ed6ec13ddf0",
+      "kind": "task",
+      "milestone": "A",
+      "parent": "A03",
+      "dependencies": [
+        "A03.1",
+        "A03.2"
+      ]
+    },
+    "C02.1": {
+      "number": 26,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/26",
+      "source": "docs/backlog/milestone-c-planning/epic-c02/C02.1-model-reguły-cyklicznej.md",
+      "sourceSha256": "329207d67fc6a8206259d913390a74709926f1ffaa363e150c8e132de816f177",
+      "kind": "task",
+      "milestone": "C",
+      "parent": "C02",
+      "dependencies": [
+        "A02.2"
+      ]
+    },
+    "D01.1": {
+      "number": 27,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/27",
+      "source": "docs/backlog/milestone-d-goals/epic-d01/D01.1-model-celu-i-rezerwacji.md",
+      "sourceSha256": "8cd70463ff0c01ead6b476549f7e8a31ac4200c75967a01f90c31e2b3aafe16c",
+      "kind": "task",
+      "milestone": "D",
+      "parent": "D01",
+      "dependencies": [
+        "A02.2"
+      ]
+    },
+    "A02.5": {
+      "number": 28,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/28",
+      "source": "docs/backlog/milestone-a-foundation/epic-a02/A02.5-testy-niezmienników-finansowych.md",
+      "sourceSha256": "fb1dc0c553ffef2428a3cb29960db73b9ec9e02da73628c1af82d84c9a42acdf",
+      "kind": "task",
+      "milestone": "A",
+      "parent": "A02",
+      "dependencies": [
+        "A02.3",
+        "A02.4"
+      ]
+    },
+    "B01.1": {
+      "number": 29,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/29",
+      "source": "docs/backlog/milestone-b-finances/epic-b01/B01.1-formularz-nowej-operacji.md",
+      "sourceSha256": "8a14bfebaa0c861aee04e750c7ae41eb08136266c2e0700d6834d5ab710d11fb",
+      "kind": "task",
+      "milestone": "B",
+      "parent": "B01",
+      "dependencies": [
+        "A03.3",
+        "A02.3"
+      ]
+    },
+    "B02.1": {
+      "number": 30,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/30",
+      "source": "docs/backlog/milestone-b-finances/epic-b02/B02.1-koszyki-oszczędności.md",
+      "sourceSha256": "be67e85fc7f4f1e1559b1100e10ca275f0b841bbf3912af5bf5dfc2944d3ca57",
+      "kind": "task",
+      "milestone": "B",
+      "parent": "B02",
+      "dependencies": [
+        "A02.4",
+        "A03.2"
+      ]
+    },
+    "C01.1": {
+      "number": 31,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/31",
+      "source": "docs/backlog/milestone-c-planning/epic-c01/C01.1-model-planu-miesiąca.md",
+      "sourceSha256": "a588d1a209ba6c8f7162766d3092cc0f538207b52262fe2ce09c6d74a7670890",
+      "kind": "task",
+      "milestone": "C",
+      "parent": "C01",
+      "dependencies": [
+        "A02.3"
+      ]
+    },
+    "C02.2": {
+      "number": 32,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/32",
+      "source": "docs/backlog/milestone-c-planning/epic-c02/C02.2-crud-stałych-wydatków.md",
+      "sourceSha256": "35c0b43591c0506eb4a287b85d0cd98c3418a051f340cf28b630aa432c0b1e90",
+      "kind": "task",
+      "milestone": "C",
+      "parent": "C02",
+      "dependencies": [
+        "C02.1",
+        "A03.3"
+      ]
+    },
+    "D01.2": {
+      "number": 33,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/33",
+      "source": "docs/backlog/milestone-d-goals/epic-d01/D01.2-crud-celów-i-lista.md",
+      "sourceSha256": "59a314d9558309e78240bad6e7f6c71fdafbe4c33044a41ce547cc93de6a25c0",
+      "kind": "task",
+      "milestone": "D",
+      "parent": "D01",
+      "dependencies": [
+        "D01.1",
+        "A03.3"
+      ]
+    },
+    "B01.2": {
+      "number": 34,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/34",
+      "source": "docs/backlog/milestone-b-finances/epic-b01/B01.2-zapis-operacji-z-formularza.md",
+      "sourceSha256": "a8f27525a0d7ac9a8bcc9b1106f37d2abe23df50334c2a0f6724d5a004c1056a",
+      "kind": "task",
+      "milestone": "B",
+      "parent": "B01",
+      "dependencies": [
+        "B01.1"
+      ]
+    },
+    "B02.2": {
+      "number": 35,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/35",
+      "source": "docs/backlog/milestone-b-finances/epic-b02/B02.2-kapitał-obligacji-i-operacje-historyczne.md",
+      "sourceSha256": "1ec1a4b68626d6d2e239a3e5c63f04b9bbf62746331c5a6f8b54a0fa9e934f95",
+      "kind": "task",
+      "milestone": "B",
+      "parent": "B02",
+      "dependencies": [
+        "B02.1",
+        "A02.5"
+      ]
+    },
+    "B02.3": {
+      "number": 36,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/36",
+      "source": "docs/backlog/milestone-b-finances/epic-b02/B02.3-ręczne-wyceny-etf-i-ppk.md",
+      "sourceSha256": "b6c43eba5fa75b8d184e7566ed70e6f9e7eac85f2b18695d0a04795908dfd866",
+      "kind": "task",
+      "milestone": "B",
+      "parent": "B02",
+      "dependencies": [
+        "B02.1"
+      ]
+    },
+    "B03.1": {
+      "number": 37,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/37",
+      "source": "docs/backlog/milestone-b-finances/epic-b03/B03.1-dashboard--miękkie-hero.md",
+      "sourceSha256": "1785568a9570701a3446d6abbf939dd449a094f2862904127b7042b06cbc79d2",
+      "kind": "task",
+      "milestone": "B",
+      "parent": "B03",
+      "dependencies": [
+        "B02.1",
+        "A03.1"
+      ]
+    },
+    "C01.2": {
+      "number": 38,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/38",
+      "source": "docs/backlog/milestone-c-planning/epic-c01/C01.2-ekran-planowania-miesiąca.md",
+      "sourceSha256": "4db66785016063fe648a3f677edbed0dedbda004e8a599da854f2531532f04ff",
+      "kind": "task",
+      "milestone": "C",
+      "parent": "C01",
+      "dependencies": [
+        "C01.1",
+        "A03.3"
+      ]
+    },
+    "B01.3": {
+      "number": 39,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/39",
+      "source": "docs/backlog/milestone-b-finances/epic-b01/B01.3-historia-transakcji.md",
+      "sourceSha256": "3bcbf7a35fb73becf672f20f03fd97db8afdbe2354db5973f9870f0e738ee17d",
+      "kind": "task",
+      "milestone": "B",
+      "parent": "B01",
+      "dependencies": [
+        "B01.2"
+      ]
+    },
+    "B02.4": {
+      "number": 40,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/40",
+      "source": "docs/backlog/milestone-b-finances/epic-b02/B02.4-przegląd-szczegółów-oszczędności.md",
+      "sourceSha256": "8cda50a3bc4de42d6f65217422f1d266e521e8cee9c5549cb87ee6dacb6e304e",
+      "kind": "task",
+      "milestone": "B",
+      "parent": "B02",
+      "dependencies": [
+        "B02.2",
+        "B02.3"
+      ]
+    },
+    "C01.3": {
+      "number": 41,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/41",
+      "source": "docs/backlog/milestone-c-planning/epic-c01/C01.3-potwierdzenie-realizacji-planu.md",
+      "sourceSha256": "1c2887c50452f5e7984891f59d403749d18c5a5d3a90bacd525e65e64cd6adf1",
+      "kind": "task",
+      "milestone": "C",
+      "parent": "C01",
+      "dependencies": [
+        "C01.2",
+        "B01.2"
+      ]
+    },
+    "C02.3": {
+      "number": 42,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/42",
+      "source": "docs/backlog/milestone-c-planning/epic-c02/C02.3-wystąpienia-i-status-płatności.md",
+      "sourceSha256": "e41461b6920004cbbe66ae1d1d1c83223ffcb9487ff116aad481095d5118f007",
+      "kind": "task",
+      "milestone": "C",
+      "parent": "C02",
+      "dependencies": [
+        "C02.2",
+        "B01.2"
+      ]
+    },
+    "D01.3": {
+      "number": 43,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/43",
+      "source": "docs/backlog/milestone-d-goals/epic-d01/D01.3-szczegóły-celu-i-skutki-zakupu.md",
+      "sourceSha256": "169c748ad031b15eb118cfb2eb5725bc6cbbc9a29bf4e3a74cc21fe9e0aa113d",
+      "kind": "task",
+      "milestone": "D",
+      "parent": "D01",
+      "dependencies": [
+        "D01.2",
+        "C01.2"
+      ]
+    },
+    "B01.4": {
+      "number": 44,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/44",
+      "source": "docs/backlog/milestone-b-finances/epic-b01/B01.4-edycja-i-usuwanie-operacji.md",
+      "sourceSha256": "67502a557013362bd6ddf746b8d64161c7fce6c2e138a7e28e9cbda3a5ee6074",
+      "kind": "task",
+      "milestone": "B",
+      "parent": "B01",
+      "dependencies": [
+        "B01.3"
+      ]
+    },
+    "B01.5": {
+      "number": 45,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/45",
+      "source": "docs/backlog/milestone-b-finances/epic-b01/B01.5-filtry-historii.md",
+      "sourceSha256": "4a17401d30d60a6ff29abf048fb161001062c588b22504f29081d00622f24879",
+      "kind": "task",
+      "milestone": "B",
+      "parent": "B01",
+      "dependencies": [
+        "B01.3"
+      ]
+    },
+    "B03.2": {
+      "number": 46,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/46",
+      "source": "docs/backlog/milestone-b-finances/epic-b03/B03.2-dashboard--twarde-podsumowanie.md",
+      "sourceSha256": "53f3086704c6dbe653691a9efd10c00cc25c0c57dfa3a5a2f993333439d47c33",
+      "kind": "task",
+      "milestone": "B",
+      "parent": "B03",
+      "dependencies": [
+        "B02.4"
+      ]
+    },
+    "C02.4": {
+      "number": 47,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/47",
+      "source": "docs/backlog/milestone-c-planning/epic-c02/C02.4-ekwiwalent-miesięczny-i-należności.md",
+      "sourceSha256": "57c71ef0a8b3f254b0bbd2747cdb106e25fd455783ff25edc6fca61f0ffc848f",
+      "kind": "task",
+      "milestone": "C",
+      "parent": "C02",
+      "dependencies": [
+        "C02.3"
+      ]
+    },
+    "D01.4": {
+      "number": 48,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/48",
+      "source": "docs/backlog/milestone-d-goals/epic-d01/D01.4-cel-mieszkaniowy.md",
+      "sourceSha256": "7e101a734654d3e6456ba72f1a80066fafa645b88f6b4c8a609cea861bfe792c",
+      "kind": "task",
+      "milestone": "D",
+      "parent": "D01",
+      "dependencies": [
+        "D01.3",
+        "B02.4"
+      ]
+    },
+    "B03.3": {
+      "number": 49,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/49",
+      "source": "docs/backlog/milestone-b-finances/epic-b03/B03.3-dashboard--skrót-miesiąca.md",
+      "sourceSha256": "d1b32c8960c4575c5fef433091cb1b3c9c680a019a5b41e4182dad4f78db232b",
+      "kind": "task",
+      "milestone": "B",
+      "parent": "B03",
+      "dependencies": [
+        "B03.1",
+        "B03.2",
+        "C01.3"
+      ]
+    },
+    "C03.1": {
+      "number": 50,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/50",
+      "source": "docs/backlog/milestone-c-planning/epic-c03/C03.1-agregaty-miesięczne.md",
+      "sourceSha256": "044950a3a963f8c90c8b2ad19b9d871df35565af9369ae6f77e73c1d1ca46859",
+      "kind": "task",
+      "milestone": "C",
+      "parent": "C03",
+      "dependencies": [
+        "C01.3",
+        "C02.3",
+        "B01.5"
+      ]
+    },
+    "C03.2": {
+      "number": 51,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/51",
+      "source": "docs/backlog/milestone-c-planning/epic-c03/C03.2-ekran-miesięcznego-przeglądu.md",
+      "sourceSha256": "23bebe2f94ec84ec57d354e107309fed4f4684ac99c23eea5d4f966315c93257",
+      "kind": "task",
+      "milestone": "C",
+      "parent": "C03",
+      "dependencies": [
+        "C03.1",
+        "A03.2"
+      ]
+    },
+    "D02.1": {
+      "number": 52,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/52",
+      "source": "docs/backlog/milestone-d-goals/epic-d02/D02.1-silnik-projekcji-miesięcznej.md",
+      "sourceSha256": "0f190c56541412402aebc4c7ccc25898666c93a17316f52d1a02ac20c8945bad",
+      "kind": "task",
+      "milestone": "D",
+      "parent": "D02",
+      "dependencies": [
+        "C03.1"
+      ]
+    },
+    "E01.1": {
+      "number": 53,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/53",
+      "source": "docs/backlog/milestone-e-release/epic-e01/E01.1-eksport-danych-lokalnych.md",
+      "sourceSha256": "35b3c91229427931752614f177e61580badf0d38b4861b908caa44df2b7670c3",
+      "kind": "task",
+      "milestone": "E",
+      "parent": "E01",
+      "dependencies": [
+        "C03.1",
+        "D01.2"
+      ]
+    },
+    "D02.2": {
+      "number": 54,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/54",
+      "source": "docs/backlog/milestone-d-goals/epic-d02/D02.2-zdarzenia-przyszłej-podwyżki.md",
+      "sourceSha256": "d6b41496c96f17ac864fa269abe1694c2e0c0af0f2efe6eced44e930cdb3170a",
+      "kind": "task",
+      "milestone": "D",
+      "parent": "D02",
+      "dependencies": [
+        "D02.1"
+      ]
+    },
+    "E01.2": {
+      "number": 55,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/55",
+      "source": "docs/backlog/milestone-e-release/epic-e01/E01.2-import--walidacja-i-rollback.md",
+      "sourceSha256": "421ca819bb1c65231b9d63f25b426a9cfc4c0987c4fbedfdb6944faa7f4ce95d",
+      "kind": "task",
+      "milestone": "E",
+      "parent": "E01",
+      "dependencies": [
+        "E01.1"
+      ]
+    },
+    "D02.3": {
+      "number": 56,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/56",
+      "source": "docs/backlog/milestone-d-goals/epic-d02/D02.3-trzy-scenariusze.md",
+      "sourceSha256": "e59eed4ce8a16bfa595172d44e856fce899cc2b11a25b96f4993cf26e72e23b1",
+      "kind": "task",
+      "milestone": "D",
+      "parent": "D02",
+      "dependencies": [
+        "D02.2"
+      ]
+    },
+    "E02.1": {
+      "number": 57,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/57",
+      "source": "docs/backlog/milestone-e-release/epic-e02/E02.1-konfiguracja-ios-release.md",
+      "sourceSha256": "542f9829b5b486ca82f82a4676c64dafdb7a94d405dc92c1bcb2bc9bd677fe34",
+      "kind": "task",
+      "milestone": "E",
+      "parent": "E02",
+      "dependencies": [
+        "A01.3",
+        "E01.2"
+      ]
+    },
+    "D02.4": {
+      "number": 58,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/58",
+      "source": "docs/backlog/milestone-d-goals/epic-d02/D02.4-porównanie-scenariuszy-ui.md",
+      "sourceSha256": "96a4d4cb3ad6220cbc49113e971a861ab212e904eecbbdfe48416307164b431a",
+      "kind": "task",
+      "milestone": "D",
+      "parent": "D02",
+      "dependencies": [
+        "D02.3",
+        "A03.1"
+      ]
+    },
+    "D03.1": {
+      "number": 59,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/59",
+      "source": "docs/backlog/milestone-d-goals/epic-d03/D03.1-dane-do-wykresów.md",
+      "sourceSha256": "e7729128f389154955a8da6428fd596b9cd692056934e1c5e453c1047d84e403",
+      "kind": "task",
+      "milestone": "D",
+      "parent": "D03",
+      "dependencies": [
+        "D02.3",
+        "B02.3"
+      ]
+    },
+    "E02.2": {
+      "number": 60,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/60",
+      "source": "docs/backlog/milestone-e-release/epic-e02/E02.2-smoke-test-na-iphonie.md",
+      "sourceSha256": "f3772a6d3afd5d55f015d3585b137263c381c2229f5220e0b496068f649dcd1b",
+      "kind": "task",
+      "milestone": "E",
+      "parent": "E02",
+      "dependencies": [
+        "E02.1"
+      ]
+    },
+    "D03.2": {
+      "number": 61,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/61",
+      "source": "docs/backlog/milestone-d-goals/epic-d03/D03.2-wykres-wzrostu-oszczędności.md",
+      "sourceSha256": "05bde4f49abda5f7e6d0a7d41cb2d955a9c92060b79a8015fb02025585028c40",
+      "kind": "task",
+      "milestone": "D",
+      "parent": "D03",
+      "dependencies": [
+        "D03.1",
+        "A03.1"
+      ]
+    },
+    "D03.3": {
+      "number": 62,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/62",
+      "source": "docs/backlog/milestone-d-goals/epic-d03/D03.3-wizualizacja-alokacji.md",
+      "sourceSha256": "35af9e30529652622bcc234dd212102c1a04f3bc6611852b3687eaa1113d0c17",
+      "kind": "task",
+      "milestone": "D",
+      "parent": "D03",
+      "dependencies": [
+        "D03.1"
+      ]
+    },
+    "E03.1": {
+      "number": 63,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/63",
+      "source": "docs/backlog/milestone-e-release/epic-e03/E03.1-regresja-finansowa-end-to-end.md",
+      "sourceSha256": "a27577c188f0385cd98d181468a57a86e2708c1e2d41a1d2dbc8400039736dfe",
+      "kind": "task",
+      "milestone": "E",
+      "parent": "E03",
+      "dependencies": [
+        "E02.2",
+        "D03.2",
+        "D03.3"
+      ]
+    },
+    "E03.2": {
+      "number": 64,
+      "url": "https://github.com/WiktorL123/Skarbiec/issues/64",
+      "source": "docs/backlog/milestone-e-release/epic-e03/E03.2-accessibility-i-performance.md",
+      "sourceSha256": "5cb8fa7bd13ba4e5390307602025669f14d0aba9c86d5e200f7b96a3cbe041c3",
+      "kind": "task",
+      "milestone": "E",
+      "parent": "E03",
+      "dependencies": [
+        "E03.1"
+      ]
+    }
+  },
+  "verifiedAt": "2026-11-13T19:33:21.9418189Z",
+  "verification": {
+    "tasks": 49,
+    "issues": 64,
+    "milestones": 5,
+    "dependencies": 76,
+    "result": "passed",
+    "epics": 15,
+    "parentRelations": 49,
+    "createdLabels": 7
+  }
+}

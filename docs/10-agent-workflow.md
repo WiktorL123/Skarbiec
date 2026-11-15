@@ -38,6 +38,14 @@
 - Zatwierdzone wybory techniczne proponuj do `docs/12-implementation-decisions.md`; retrospektywy nadal do `PROGRESS.md`, po osobnej akceptacji.
 
 ## Cykl jednego taska
+
+### Branche (zatwierdzone 2026-11-13)
+- Przed zmianami dla taska utwórz branch `feature/<ID>-<krótki-opis>`, np. `feature/A01.1-bootstrap-expo`.
+- Zachowuj stabilne ID backlogu; opis zapisuj małymi literami ASCII z myślnikami.
+- Nie implementuj tasków bezpośrednio na `main`. Jeden branch odpowiada jednemu taskowi i jawnie zatwierdzonym rozszerzeniom.
+- Przed przełączeniem sprawdź bieżący branch i niezapisane zmiany; nie usuwaj ani nie nadpisuj cudzej pracy.
+- Utworzenie brancha nie oznacza zgody na push, merge ani zamknięcie Issue. Review i akceptacja pozostają zgodne z tym dokumentem.
+
 1. Przeczytaj `PROGRESS.md`, sprawdź rzeczywisty stan kodu i otwórz dokładnie jeden task z `docs/09-backlog.md`. Sprawdź zależności i Definition of Ready.
 2. Przed zmianami podaj: `Goal`, `Docs`, `Invariants`, `Files`, `Out of scope`, `Tests`, `Unknowns`.
 3. Jeśli obowiązuje Interactive Planning Gate, przeprowadź ankietę i uzyskaj zgodę na plan. Następnie wykonaj najmniejszy spójny zakres. Nie dopisuj funkcji „przy okazji”.
