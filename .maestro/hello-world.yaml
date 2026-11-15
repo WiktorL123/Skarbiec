@@ -1,0 +1,4 @@
+appId: com.skarbiec.app
+---
+- launchApp
+- assertVisible: "Hello World"

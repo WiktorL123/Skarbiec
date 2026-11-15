@@ -4,10 +4,10 @@
 > Aktualizacje proponowane przez agenta wymagają **wyraźnej akceptacji użytkownika** przed zapisaniem.
 
 ## Stan projektu
-- **Ostatni zatwierdzony task:** A01.1 — Bootstrap Expo, struktura i Hello World Liquid Glass.
+- **Ostatni zatwierdzony task:** A01.2 — Fundament testów jednostkowych i UI.
 - **Bieżący etap:** Milestone A — Foundation.
-- **Kolejny kandydat:** A01.2 — fundament testów jednostkowych i UI (po ankiecie Interactive Planning Gate).
-- **Ostatnia aktualizacja:** 2026-11-15, akceptacja A01.1.
+- **Kolejny kandydat:** A01.3 — nawigacja pięciu zakładek (po akceptacji PR i osobnej zgodzie).
+- **Ostatnia aktualizacja:** 2026-11-16, akceptacja A01.2.
 
 > Wpisy powyżej są stanem początkowym dokumentacji, nie potwierdzeniem wykonania prac programistycznych. Po rozpoczęciu implementacji weryfikuj rzeczywisty kod i historię repozytorium.
 
@@ -21,6 +21,15 @@
 - **Wnioski dla następnych zadań:** Testy jednostkowe i komponentowe należy skonfigurować osobno w A01.2. Nie dziedziczyć automatycznie decyzji testowych z A01.1.
 - **Ryzyka / dług / blokery:** Brak ręcznej weryfikacji na iPhonie. Eksport iOS potwierdza bundle JavaScript, ale nie zastępuje builda Release.
 - **Następny krok:** A01.2 — fundament testów jednostkowych i UI, po osobnej ankiecie Interactive Planning Gate.
+
+### 2026-11-16 — A01.2: Fundament testów jednostkowych i UI
+- **Status:** Done
+- **Dostarczono:** Konfigurację Jest z `jest-expo`, React Native Testing Library, test ekranu `Hello World`, prosty test jednostkowy, raport coverage bez progu, konfigurację scenariusza Maestro oraz dokumentację testów.
+- **Zweryfikowano:** `npm test` — 2/2; `npm run test:coverage` — 86,95% statements; `npm run typecheck`; `npm run lint`; `npx expo config --type public`; `git diff --check` — pomyślnie.
+- **Decyzje / ADR:** Wybrano Jest, RNTL, Maestro oraz coverage informacyjne bez progu. E2E pozostaje przygotowane konfiguracyjnie, bez wykonania lokalnego.
+- **Wnioski dla następnych zadań:** Przy testach NativeWind potrzebny jest izolowany mock JSX runtime. Testy RNTL w użytej wersji wymagają asynchronicznego `render`.
+- **Ryzyka / dług / blokery:** Maestro nie jest zainstalowane lokalnie, więc `.maestro/hello-world.yaml` nie został wykonany. Instalacja zależności zgłosiła 28 podatności w drzewie npm; nie uruchamiano `npm audit fix`.
+- **Następny krok:** A01.3 — nawigacja pięciu zakładek, po akceptacji PR i osobnej zgodzie na rozpoczęcie taska.
 
 <!-- SZABLON NOWEGO WPISU (nie jest zatwierdzonym wpisem)
 ### YYYY-MM-DD — TASK_ID: Krótki tytuł
