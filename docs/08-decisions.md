@@ -19,6 +19,9 @@
 **Status:** proposed. Stitch definiuje wyłącznie estetykę ciemną; wcześniejszy brief rozważał Light Mode. W MVP realizujemy najpierw Dark Mode, bez blokowania przyszłego Light Mode.
 
 ## Pytania do rozstrzygnięcia implementacyjnie
+## ADR-007: Bootstrap A01.1
+**Status:** accepted, 2026-11-13. Expo SDK 58, npm, TypeScript, Expo Router (jeden ekran), NativeWind 4 + Tailwind 3. Tokeny Stitch mają jedno źródło w `src/ui/tokens.ts`. Szkło wykorzystuje `expo-blur` i `expo-linear-gradient` z fallbackiem dostępności. Ciemny motyw obowiązuje w A01.1; jasny i tryb systemowy zostają na później. Szczegóły zatwierdzonej ankiety: `docs/12-implementation-decisions.md`. Rozstrzyga wybór technologii oraz roboczy zakres ADR-004/ADR-006 dla bootstrapu.
+
 - Czy „Skarbiec” staje się oficjalną nazwą, czy pozostaje robocza „Savings App”?
 - Czy w MVP śledzimy dokładne saldo głównego CA24, czy wyłącznie pulę oszczędności i zapis operacji? Bez danych do rekonsyliacji nie zgaduj salda.
 - Czy rezerwacja części miękkich to wyłącznie cel oznaczony, czy osobny realny „subwallet”?

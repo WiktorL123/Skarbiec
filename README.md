@@ -2,7 +2,7 @@
 
 **Skarbiec** to prywatna aplikacja mobilna na iOS do świadomego planowania oszczędności, kontrolowania wydatków i realizacji celów finansowych. Powstaje w podejściu **agentic programming**: rozwój jest podzielony na niewielkie zadania, implementowane z pomocą agentów AI, testowane i zatwierdzane przez autora projektu.
 
-> **Status:** projekt w przygotowaniu, przed implementacją MVP. To repozytorium zawiera na razie specyfikację produktu, reguły domenowe, założenia UI oraz backlog. Opisane poniżej funkcjonalności są **planowane**, a nie gotowe.
+> **Status:** bootstrap aplikacji w realizacji (A01.1). Repozytorium zawiera szkielet Expo z jednym ekranem Hello World oraz dokumentację produktu. Opisane poniżej funkcjonalności finansowe są **planowane**, a nie gotowe.
 
 ## Po co Skarbiec?
 
@@ -32,7 +32,8 @@ Pierwsza wersja ma działać **offline-first**, bez logowania i bez obowiązkowe
 | Integracja bankowa | Poza MVP, ewentualna późniejsza integracja AIS |
 | Dystrybucja | Prywatny build na urządzenie, bez planowanej publikacji w App Store |
 
-Szczegóły bibliotek i struktury projektu zostaną zatwierdzone w ramach interaktywnego etapu inicjalizacji.
+Uzgodniony bootstrap używa Expo SDK 58, TypeScript, Expo Router, NativeWind 4 i npm.
+Uruchomienie i weryfikacja: [lokalny development](docs/15-local-development.md).
 
 ## Sposób realizacji
 

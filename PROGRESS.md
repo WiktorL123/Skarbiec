@@ -4,16 +4,23 @@
 > Aktualizacje proponowane przez agenta wymagają **wyraźnej akceptacji użytkownika** przed zapisaniem.
 
 ## Stan projektu
-- **Ostatni zatwierdzony task:** brak (na moment utworzenia dokumentu).
+- **Ostatni zatwierdzony task:** A01.1 — Bootstrap Expo, struktura i Hello World Liquid Glass.
 - **Bieżący etap:** Milestone A — Foundation.
-- **Kolejny kandydat:** A01.1 — inicjalizacja Expo i TypeScript (zweryfikuj aktualny backlog i repo).
-- **Ostatnia aktualizacja:** 2026-11-09, inicjalizacja mechanizmu retrospektyw.
+- **Kolejny kandydat:** A01.2 — fundament testów jednostkowych i UI (po ankiecie Interactive Planning Gate).
+- **Ostatnia aktualizacja:** 2026-11-15, akceptacja A01.1.
 
 > Wpisy powyżej są stanem początkowym dokumentacji, nie potwierdzeniem wykonania prac programistycznych. Po rozpoczęciu implementacji weryfikuj rzeczywisty kod i historię repozytorium.
 
 ## Zatwierdzone retrospektywy
 
-_Brak wpisów. Agent proponuje nową retrospektywę na końcu zadania w odpowiedzi Review, a dopisuje ją tutaj dopiero po akceptacji._
+### 2026-11-15 — A01.1: Bootstrap Expo i Hello World Liquid Glass
+- **Status:** Done
+- **Dostarczono:** Szkielet Expo SDK 58 z TypeScript, Expo Router, NativeWind oraz tokenami Stitch; pojedynczy ekran `Hello World` w karcie Liquid Glass z fallbackiem ograniczonej przezroczystości.
+- **Zweryfikowano:** `npm run typecheck`, `npm run lint`, `npx expo install --check`, `npx expo-doctor` (20/20), `npx expo config --type public`, `git diff --check` — zakończone pomyślnie. Weryfikacja fizycznego iPhone'a, VoiceOver, Dynamic Type i Reduce Transparency pozostaje niewykonana.
+- **Decyzje / ADR:** Ustalenia A01.1 zapisane w `docs/12-implementation-decisions.md`; powiązane ADR-y: ADR-001, ADR-004, ADR-006 i ADR-007.
+- **Wnioski dla następnych zadań:** Testy jednostkowe i komponentowe należy skonfigurować osobno w A01.2. Nie dziedziczyć automatycznie decyzji testowych z A01.1.
+- **Ryzyka / dług / blokery:** Brak ręcznej weryfikacji na iPhonie. Eksport iOS potwierdza bundle JavaScript, ale nie zastępuje builda Release.
+- **Następny krok:** A01.2 — fundament testów jednostkowych i UI, po osobnej ankiecie Interactive Planning Gate.
 
 <!-- SZABLON NOWEGO WPISU (nie jest zatwierdzonym wpisem)
 ### YYYY-MM-DD — TASK_ID: Krótki tytuł
